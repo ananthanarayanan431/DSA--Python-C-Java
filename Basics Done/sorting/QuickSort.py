@@ -2,7 +2,7 @@
 def QuickSort(mylist,low,up):
     if low<up:
         index=partition(mylist, low, up)
-        QuickSort(mylist,low,index)
+        QuickSort(mylist,low,index-1)
         QuickSort(mylist,index+1,up)
 
 
