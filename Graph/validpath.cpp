@@ -7,6 +7,7 @@ bool dfs(vector<vector<bool>>& graph,int src,int des,vector<bool>& vis,int n) {
     if (src==des){
         return true;
     }
+    vis[src]=true;
     for (int i=0; i<n; ++i) {
         if (graph[src][i] && !vis[i]) {
             return true;
